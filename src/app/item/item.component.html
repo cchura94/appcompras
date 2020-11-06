@@ -1,0 +1,13 @@
+
+<div class="item" *ngIf="producto.estado == true">
+    <div class="imagen">
+        <img [src]="producto.imagen" alt="">
+    </div>
+    <div class="detalle">
+        <h1>{{ producto.titulo }}</h1>
+        <p>{{ producto.detalle }}</p>
+    </div>
+    <div class="acciones">
+        <button (click)="cambiar()">no disponible</button>
+    </div>
+</div>
