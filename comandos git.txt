@@ -1,0 +1,21 @@
+Si existe un Proyecto (CLONAR)
+
+    > git clone direccion_remota
+
+Si un nuevo proyecto o repositorio GIT (INIT)
+
+    > git init
+
+// Creamos el repositorio remoto (GITHUB, BITBUCKET, GITLAB)
+
+Ejecutar el comando git add 
+    > git add .
+
+Agregar un commit 
+    > git commit -m "Proyecto inicial"
+
+Relacionar el repositorio remoto con el repositorio local
+     > git remote add origin https://github.com/cchura94/appcompras.git
+
+Para verificar 
+    > git remote -v

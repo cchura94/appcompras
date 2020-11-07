@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PrimerComponent } from './primer/primer.component';
 import { ComprasComponent } from './compras/compras.component';
 import { ItemComponent } from './item/item.component';
+import { ProductoComponent } from './producto/producto.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ItemComponent } from './item/item.component';
     PrimerComponent,
     ComprasComponent,
     ItemComponent,
+    ProductoComponent,
+    InicioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
