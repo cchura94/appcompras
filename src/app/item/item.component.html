@@ -1,13 +1,11 @@
 
-<div class="item" *ngIf="producto.estado == true">
-    <div class="imagen">
-        <img [src]="producto.imagen" alt="">
-    </div>
-    <div class="detalle">
-        <h1>{{ producto.titulo }}</h1>
-        <p>{{ producto.detalle }}</p>
-    </div>
-    <div class="acciones">
-        <button (click)="cambiar()">no disponible</button>
-    </div>
+
+<div class="card" *ngIf="producto.estado == true">
+  <img [src]="producto.imagen" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ producto.titulo }}</h5>
+    <p class="card-text">{{ producto.detalle }}</p>
+    <button (click)="cambiar()" class="btn btn-primary">-</button>
+    <button (click)="addCompras()" class="btn btn-success">+</button>
+  </div>
 </div>

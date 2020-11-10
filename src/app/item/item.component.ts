@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -13,10 +13,18 @@ export class ItemComponent {
     imagen: '',
   };
 
+  @Output() productoClicked: EventEmitter<any> = new EventEmitter();
+
   constructor() {}
 
   cambiar() {
     //alert(this.producto.titulo);
     this.producto.estado = false;
+  }
+
+  addCompras() {
+    //alert(this.producto.titulo);
+    this.cambiar();
+    this.productoClicked.emit(this.producto);
   }
 }

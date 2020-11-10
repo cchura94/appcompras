@@ -8,6 +8,8 @@ import { ComprasComponent } from './compras/compras.component';
 import { ItemComponent } from './item/item.component';
 import { ProductoComponent } from './producto/producto.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,9 @@ import { InicioComponent } from './inicio/inicio.component';
     ItemComponent,
     ProductoComponent,
     InicioComponent,
+    ContactoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
